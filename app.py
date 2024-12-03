@@ -6,6 +6,8 @@ import plotly.express as px
 import numpy as np
 from datetime import datetime, timedelta
 luis 
+#hola uwuw
+
 # Funciones auxiliares
 def obtener_datos_acciones(simbolos, start_date, end_date):
     data = yf.download(simbolos, start=start_date, end=end_date)['Close']
