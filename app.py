@@ -142,7 +142,7 @@ start_date_options = {
     "1 año": end_date - timedelta(days=365),
     "3 años": end_date - timedelta(days=3*365),
     "5 años": end_date - timedelta(days=5*365),
-    "10 años": 2010-01-01
+    "10 años": end_date - timedelta(days=13*365),
 }
 selected_window = st.sidebar.selectbox("Seleccione la ventana de tiempo para el análisis:", list(start_date_options.keys()))
 start_date = start_date_options[selected_window]
