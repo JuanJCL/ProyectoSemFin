@@ -134,7 +134,7 @@ selected_benchmark = st.sidebar.selectbox("Seleccione el benchmark:", list(bench
 benchmark = benchmark_options[selected_benchmark]
 
 # Selección de la ventana de tiempo
-end_date = pd.to_datetime(2023-12-31) #datetime.now()
+end_date = datetime.now()
 start_date_options = {
     "1 mes": end_date - timedelta(days=30),
     "3 meses": end_date - timedelta(days=90),
